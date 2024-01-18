@@ -17,7 +17,7 @@
 body {
     font-size: 15px;
     text-align: center;
-    overflow: hidden;
+    overflow: auto;
     
 }
 
@@ -31,6 +31,8 @@ main {
     height: auto;
 }
 
+
+
 section {  
     width: 450px;
     padding: 20px;
@@ -40,10 +42,14 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    -webkit-box-shadow: 10px 24px 30px 3px rgba(0,0,0,0.13);
--moz-box-shadow: 10px 24px 30px 3px rgba(0, 0, 0, 0.096);
-box-shadow: 10px 24px 30px 3px rgba(0, 0, 0, 0.096);
+box-shadow: 10px 24px 30px 3px rgba(0, 0, 0, 0.314);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 10px 24px 30px 3px rgba(0, 0, 0, 0.196);
+}
+
 .imagen-container {
     width: 400px;
     height: 400px; /* Añade una altura también */
